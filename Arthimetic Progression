@@ -1,0 +1,13 @@
+#include<iostream>
+using namespace std;
+int ArthProg(int n){
+    int x = 3*n + 7;
+    return x;
+}
+int main(){
+    int a;
+    cout << "Enter value of n to get nth value of A.P" << endl;
+    cin >> a;
+    int y = ArthProg(a);
+    cout << "The " << a << "th term of A.P is : " << y << endl;
+}
