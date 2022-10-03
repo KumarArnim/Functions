@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+int fibonacci(int n){
+    int x = 0;
+    int y = 1;
+    for(int i = 1 ; i <= n ; i++){
+        int sum = x + y;
+        x = y;
+        y = sum;
+    }
+    return y;
+}
+int main(){
+    int a;
+    cout << "Enter the nth number you want of fibonacci series" << endl;
+    cin >> a;
+    int f = fibonacci(a);
+    cout << f << endl;
+    return 0;
+}
