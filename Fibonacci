@@ -12,7 +12,7 @@ void fibonacci(int n){
     if(n == 1){
         cout << 0;
            }
-    elseif(n == 2){
+    else if(n == 2){
          cout << 1;
            } 
     else cout << y;
