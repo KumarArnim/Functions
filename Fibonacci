@@ -1,14 +1,22 @@
 #include<iostream>
 using namespace std;
-int fibonacci(int n){
+void fibonacci(int n){
     int x = 0;
     int y = 1;
-    for(int i = 1 ; i <= n ; i++){
+    for(int i = 3 ; i <= n ; i++){
         int sum = x + y;
         x = y;
         y = sum;
     }
-    return y;
+    
+    if(n = 1){
+        cout << 0;
+           }
+    elseif(n = 2){
+         cout << 1;
+           } 
+    else cout << y;
+    return;
 }
 int main(){
     int a;
