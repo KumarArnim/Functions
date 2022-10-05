@@ -9,10 +9,10 @@ void fibonacci(int n){
         y = sum;
     }
     
-    if(n = 1){
+    if(n == 1){
         cout << 0;
            }
-    elseif(n = 2){
+    elseif(n == 2){
          cout << 1;
            } 
     else cout << y;
@@ -22,7 +22,6 @@ int main(){
     int a;
     cout << "Enter the nth number you want of fibonacci series" << endl;
     cin >> a;
-    int f = fibonacci(a);
-    cout << f << endl;
+    fibonacci(a);
     return 0;
 }
